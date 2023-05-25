@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{
+  --main-colro: #E94A4A
+}
+
+body{
+    background-color: #FFF0F2;
+}
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 1em;
+}
+.page-container{
+    @apply px-3 md:px-20
+}
+
+
+
+.gallary-div:hover .overlay-div {
+  opacity: 1;
+  z-index: 1;
+}
+.gallary-div:hover .gallary-img {
+ scale: 1.1;
+}
+
+
+.gallary-div:hover .gallary-img1 {
+opacity: 0;
+}
+.gallary-div:hover .gallary-img2 {
+ width: 100%;
+ opacity: 1;
+}
+
+
+.active {
+    @apply  bg-[#D18F00] text-white font-bold duration-150
+}
+
+.default {
+    @apply hover:bg-[#D18F00] text-white font-bold duration-150
+}
+
+.mobile-nav {
+    @apply py-4 px-6 border-b border-white hover:bg-[#D18F00] duration-200 text-white font-bold
+}
+
+.footer-link {
+    @apply text-gray-500 hover:text-[#E94A4A] duration-200 hover:translate-x-3
+}
+
+.filter-tab{
+  @apply py-3 px-6 rounded-md font-bold hover:bg-[#d18f00] border border-gray-300
+}
+
+.active-filter-tab{
+  @apply bg-[#D18F00] text-white font-bold
+}
+
+.toy-view-details-btn{
+  @apply p-2 border border-black inline-block rounded-md bg-white cursor-pointer hover:bg-[#E94A4A] hover:text-white duration-200
+}
+
+
+.single-toy-container:hover .details-btn {
+  @apply translate-x-0
+}
+
+.kids-favorite {
+  background-size: contain;
+}
+
+.add-toy-input {
+  @apply bg-gray-200 py-2 px-3 outline-none border border-gray-400 rounded-md
+}
